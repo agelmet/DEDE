@@ -118,7 +118,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:900;transition:all .5s var(--
 header.scrolled{background:rgba(251,250,246,.86);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;padding-block:clamp(1rem,2vw,1.4rem)}
 .brand{display:flex;align-items:center;gap:.7rem}
-.brand img{height:42px;width:auto;border-radius:4px}
+.brand img{height:64px;width:auto;border-radius:4px}
 .brand b{font-family:var(--ff-display);font-size:1.5rem;font-weight:600;color:var(--ink);line-height:1}
 .brand small{display:block;font-family:var(--ff-body);font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-500);margin-top:2px}
 header.over-hero .brand b,header.over-hero .nav-links a{color:var(--paper)}
@@ -172,7 +172,7 @@ header.over-hero .burger span{background:var(--paper)}
 @keyframes vfin2{from{opacity:0}to{opacity:1}}
 .vf span{animation-name:vfin2}
 
-.hero-content{position:relative;z-index:4;padding-bottom:clamp(4rem,9vh,7rem);max-width:980px}
+.hero-content{position:relative;z-index:4;padding-bottom:clamp(4rem,9vh,7rem);max-width:980px;margin-left:0!important;margin-right:auto!important;}
 .hero .eyebrow{color:var(--peach-300)}
 .hero .eyebrow::before{background:var(--peach-300)}
 .h-line{overflow:hidden;display:block}
@@ -337,7 +337,7 @@ header.over-hero .burger span{background:var(--paper)}
 .cinfo span,.cinfo a{color:rgba(246,243,236,.9);font-size:1rem}
 .cinfo a:hover{color:var(--peach-300)}
 .contact-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
-.map-frame{position:relative;border-radius:5px;overflow:hidden;min-height:400px;border:1px solid rgba(247,199,179,.2)}
+.map-frame{position:relative;border-radius:5px;overflow:hidden;min-height:400px;border:1px solid rgba(247,199,179,.2);margin-top:4rem;}
 .map-frame iframe{width:100%;height:100%;min-height:400px;border:0;filter:grayscale(.3) saturate(.9)}
 
 /* ---------- FOOTER ---------- */
@@ -386,27 +386,24 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
 </head>
 <body>
 
-<!-- LOADER -->
 <div id="loader">
   <div class="load-frame">
     <span class="l1"></span><span class="l2"></span><span class="l3"></span><span class="l4"></span>
-    <div class="load-word">ενοἡ</div>
+    <img src="https://raw.githubusercontent.com/agelmet/DEDE/refs/heads/main/dedelogoo.jpg" class="load-word" alt="Λογότυπο" style="height:80px; width:auto; border-radius:8px; object-fit:contain;">
     <div class="load-sub">Έλενα Δέδε · Ψυχολόγος</div>
   </div>
 </div>
 
-<!-- NAV -->
 <header id="header" class="over-hero">
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="Έλενα Δέδε, αρχική">
       <img src="https://raw.githubusercontent.com/agelmet/DEDE/refs/heads/main/dedelogoo.jpg" alt="Λογότυπο Έλενα Δέδε — ενοἡ Ψυχολόγος" loading="eager">
-      <span><b>Έλενα Δέδε</b><small>Ψυχοθεραπεία</small></span>
     </a>
     <nav class="nav-links" aria-label="Κύρια πλοήγηση">
       <a href="#about">Η Έλενα</a>
       <a href="#services">Υπηρεσίες</a>
       <a href="#process">Προσέγγιση</a>
-      <a href="#reviews">Μαρτυρίες</a>
+      <a href="#reviews">Αξιολογήσεις</a>
       <a href="#faq">Ερωτήσεις</a>
       <a href="#contact" class="cta">Κλείστε Συνεδρία</a>
     </nav>
@@ -416,19 +413,17 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   </div>
 </header>
 
-<!-- OVERLAY MENU -->
 <div id="overlay">
   <nav aria-label="Μενού κινητού">
     <a href="#about">Η Έλενα</a>
     <a href="#services">Υπηρεσίες</a>
     <a href="#process">Προσέγγιση</a>
-    <a href="#reviews">Μαρτυρίες</a>
+    <a href="#reviews">Αξιολογήσεις</a>
     <a href="#faq">Ερωτήσεις</a>
     <a href="#contact">Κλείστε Συνεδρία</a>
   </nav>
 </div>
 
-<!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-bg">
     <img src="https://raw.githubusercontent.com/agelmet/DEDE/refs/heads/main/dedessd.jpg" alt="Ο ζεστός, φιλόξενος χώρος ψυχοθεραπείας της Έλενας Δέδε" loading="eager">
@@ -441,7 +436,7 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   <div class="vf-rec" aria-hidden="true"><i></i> Εδώ και τώρα</div>
 
   <div class="wrap hero-content">
-    <span class="eyebrow">Συνθετική &amp; Σχεσιακή Ψυχοθεραπεία</span>
+    <span class="eyebrow">Συνθετική & Σχεσιακή Ψυχοθεραπεία</span>
     <h1>
       <span class="h-line"><span>Η θεραπευτική σχέση</span></span>
       <span class="h-line"><span>ως <em>καταλύτης</em></span></span>
@@ -456,25 +451,23 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   <div class="scroll-cue" aria-hidden="true">Scroll</div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
     <span>Online συνεδρίες στα ελληνικά</span>
     <span>Έλληνες του εξωτερικού</span>
-    <span>Άγχος &amp; κρίσεις πανικού</span>
-    <span>Πένθος &amp; συναισθηματική ένταση</span>
-    <span>Σχέσεις &amp; όρια</span>
+    <span>Άγχος & κρίσεις πανικού</span>
+    <span>Πένθος & συναισθηματική ένταση</span>
+    <span>Σχέσεις & όρια</span>
     <span>Αυτοεκτίμηση</span>
     <span>Online συνεδρίες στα ελληνικά</span>
     <span>Έλληνες του εξωτερικού</span>
-    <span>Άγχος &amp; κρίσεις πανικού</span>
-    <span>Πένθος &amp; συναισθηματική ένταση</span>
-    <span>Σχέσεις &amp; όρια</span>
+    <span>Άγχος & κρίσεις πανικού</span>
+    <span>Πένθος & συναισθηματική ένταση</span>
+    <span>Σχέσεις & όρια</span>
     <span>Αυτοεκτίμηση</span>
   </div>
 </div>
 
-<!-- ABOUT -->
 <section class="about sec" id="about">
   <div class="wrap about-grid">
     <div class="about-img frame reveal">
@@ -500,12 +493,11 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   </div>
 </section>
 
-<!-- SERVICES -->
 <section class="services sec" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Υπηρεσίες</span>
-      <h2>Εκεί όπου <em>πιέζεται</em> ο ψυχισμός — εκεί δουλεύουμε μαζί.</h2>
+      <h2>Εξειδικευμένη <em>υποστήριξη</em> στις δυσκολίες και τις προκλήσεις σας.</h2>
       <p>Δια ζώσης, online, αλλά και με κατ' οίκον επισκέψεις για ειδικές περιπτώσεις. Όλες οι συνεδρίες διαρκούν 50 λεπτά, με ειδικό μειωμένο κόστος για φοιτητές και ανέργους.</p>
     </div>
 
@@ -513,23 +505,23 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
       <div class="acc-item reveal">
         <button class="acc-head" aria-expanded="false">
           <span class="acc-num">01</span>
-          <span class="acc-title">Άγχος, Κρίσεις Πανικού &amp; Ψυχοσωματικά Συμπτώματα</span>
+          <span class="acc-title">Άγχος, Κρίσεις Πανικού & Ψυχοσωματικά Συμπτώματα</span>
           <span class="acc-icon" aria-hidden="true"></span>
         </button>
         <div class="acc-body"><div class="acc-inner">
           <p>Το άγχος και οι φοβίες συχνά «μιλούν» μέσα από το σώμα με τη μορφή ψυχοσωματικών ενοχλήσεων ή εγκλωβίζουν τον νου σε ψυχαναγκαστικά μοτίβα σκέψης. Αξιοποιώντας τη σωματικά επικεντρωμένη προσέγγιση Gestalt και συνθετικά εργαλεία, βοηθάμε το νευρικό σύστημα να αποφορτιστεί στο «εδώ και τώρα». Μαθαίνετε να αναγνωρίζετε τα σήματα του σώματός σας, να γειώνεστε στην παρούσα στιγμή και να αποκτάτε πρακτικά εργαλεία διαχείρισης του πανικού.</p>
-          <div class="acc-tags"><span>Διαχείριση άγχους &amp; στρες</span><span>Κρίσεις πανικού</span><span>Φοβίες</span><span>Ψυχοσωματικά</span><span>Ιδεοψυχαναγκασμοί / OCD</span></div>
+          <div class="acc-tags"><span>Διαχείριση άγχους & στρες</span><span>Κρίσεις πανικού</span><span>Φοβίες</span><span>Ψυχοσωματικά</span><span>Ιδεοψυχαναγκασμοί / OCD</span></div>
         </div></div>
       </div>
 
       <div class="acc-item reveal">
         <button class="acc-head" aria-expanded="false">
           <span class="acc-num">02</span>
-          <span class="acc-title">Κατάθλιψη, Διαχείριση Πένθους &amp; Συναισθηματική Ένταση</span>
+          <span class="acc-title">Κατάθλιψη, Διαχείριση Πένθους & Συναισθηματική Ένταση</span>
           <span class="acc-icon" aria-hidden="true"></span>
         </button>
         <div class="acc-body"><div class="acc-inner">
-          <p>Η βαθιά θλίψη, η απώλεια (πένθος) και οι εκρήξεις θυμού δείχνουν έναν ψυχισμό που πιέζεται από ανεπέξεργαστα συναισθήματα ή τραύματα. Σε ένα περιβάλλον απόλυτης ασφάλειας, επεξεργαζόμαστε το οδυνηρό συναίσθημα χωρίς βιασύνη. Στόχος είναι να δώσουμε χώρο και νόημα στον πόνο σας, να ρυθμίσουμε τη συναισθηματική ένταση και να μεταβολίσουμε τις εμπειρίες σας, ώστε να βγείτε ξανά στο φως με ανανεωμένη εσωτερική δύναμη.</p>
+          <p>Η βαθιά θλίψη, η απώλεια (πένθος) and οι εκρήξεις θυμού δείχνουν έναν ψυχισμό που πιέζεται από ανεπέξεργαστα συναισθήματα ή τραύματα. Σε ένα περιβάλλον απόλυτης ασφάλειας, επεξεργαζόμαστε το οδυνηρό συναίσθημα χωρίς βιασύνη. Στόχος είναι να δώσουμε χώρο και νόημα στον πόνο σας, να ρυθμίσουμε τη συναισθηματική ένταση και να μεταβολίσουμε τις εμπειρίες σας, ώστε να βγείτε ξανά στο φως με ανανεωμένη εσωτερική δύναμη.</p>
           <div class="acc-tags"><span>Κατάθλιψη</span><span>Πένθος</span><span>Διαχείριση θυμού</span><span>Τραυματικές εμπειρίες</span></div>
         </div></div>
       </div>
@@ -537,31 +529,30 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
       <div class="acc-item reveal">
         <button class="acc-head" aria-expanded="false">
           <span class="acc-num">03</span>
-          <span class="acc-title">Διαπροσωπικές Σχέσεις, Όρια &amp; Σεξουαλικότητα</span>
+          <span class="acc-title">Διαπροσωπικές Σχέσεις, Όρια & Σεξουαλικότητα</span>
           <span class="acc-icon" aria-hidden="true"></span>
         </button>
         <div class="acc-body"><div class="acc-inner">
           <p>Η ποιότητα της ζωής μας καθορίζεται από την ποιότητα των σχέσεών μας. Είτε σε ατομικό πλαίσιο είτε σε θεραπεία ζεύγους, εξερευνούμε πώς σχετίζεστε με τους σημαντικούς άλλους. Δουλεύουμε πάνω στη δυσκολία θέσπισης υγιών ορίων, στον φόβο της συναισθηματικής εγγύτητας, καθώς και σε θέματα σεξουαλικότητας και σεξουαλικού προσανατολισμού, μέσα σε ένα πλαίσιο 100% επιβεβαιωτικό (affirmative) και ελεύθερο από κάθε κριτική.</p>
-          <div class="acc-tags"><span>Θεραπεία ζεύγους</span><span>Όρια &amp; εγγύτητα</span><span>Σεξουαλικός προσανατολισμός</span><span>Affirmative πλαίσιο</span></div>
+          <div class="acc-tags"><span>Θεραπεία ζεύγους</span><span>Όρια & εγγύτητα</span><span>Σεξουαλικός προσανατολισμός</span><span>Affirmative πλαίσιο</span></div>
         </div></div>
       </div>
 
       <div class="acc-item reveal">
         <button class="acc-head" aria-expanded="false">
           <span class="acc-num">04</span>
-          <span class="acc-title">Αυτοεικόνα, Προσωπική Ανάπτυξη &amp; Κοινωνική Μέριμνα</span>
+          <span class="acc-title">Αυτοεικόνα, Προσωπική Ανάπτυξη & Κοινωνική Μέριμνα</span>
           <span class="acc-icon" aria-hidden="true"></span>
         </button>
         <div class="acc-body"><div class="acc-inner">
           <p>Η ψυχοθεραπεία είναι ένα ταξίδι επαναπροσδιορισμού της αυτοεικόνας, το οποίο συχνά συνδέεται και με τη θεραπεία διατροφικών διαταραχών. Όλες οι υπηρεσίες προσφέρονται δια ζώσης, online, αλλά και μέσω κατ' οίκον επισκέψεων για ειδικές περιπτώσεις. Επιπλέον, αναγνωρίζοντας τις κοινωνικές προκλήσεις, παρέχεται ειδικό, μειωμένο κόστος συνεδρίας για φοιτητές και ανέργους, διασφαλίζοντας την πρόσβαση όλων στην αυτοβελτίωση.</p>
-          <div class="acc-tags"><span>Αυτοεκτίμηση &amp; αυτοεικόνα</span><span>Διατροφικές διαταραχές</span><span>Κατ' οίκον επίσκεψη</span><span>Μειωμένο κόστος: φοιτητές &amp; άνεργοι</span></div>
+          <div class="acc-tags"><span>Αυτοεκτίμηση & αυτοεικόνα</span><span>Διατροφικές διαταραχές</span><span>Κατ' οίκον επίσκεψη</span><span>Μειωμένο κόστος: φοιτητές & άνεργοι</span></div>
         </div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS / κάδρο -->
 <section class="process sec" id="process">
   <div class="glow g1"></div><div class="glow g2"></div>
   <div class="wrap">
@@ -588,12 +579,11 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   </div>
 </section>
 
-<!-- PHILOSOPHY -->
 <section class="philo sec">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Αξίες</span>
-      <h2>Πάνω σε <em>τι</em> πατάει αυτή η δουλειά.</h2>
+      <h2>Οι <em>βασικές αρχές</em> της πρακτικής μου.</h2>
     </div>
     <div class="philo-grid">
       <div class="pcard frame reveal d1">
@@ -605,7 +595,7 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
       <div class="pcard frame reveal d2">
         <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
         <svg class="icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
-        <h3>Δεοντολογία &amp; καθαρότητα</h3>
+        <h3>Δεοντολογία & καθαρότητα</h3>
         <p>Πιστεύοντας βαθιά στην προσωπική καθαρότητα του θεραπευτή, βρίσκομαι σταθερά, σε εβδομαδιαία βάση, σε δική μου προσωπική θεραπεία και εποπτεία — από την αρχή της πορείας μου.</p>
       </div>
       <div class="pcard frame reveal d1">
@@ -624,7 +614,6 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   </div>
 </section>
 
-<!-- GALLERY -->
 <section class="gallery sec">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -641,12 +630,11 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
 </section>
 <div id="lb" role="dialog" aria-modal="true" aria-label="Προβολή εικόνας"><button class="close" aria-label="Κλείσιμο">✕</button><img src="" alt=""></div>
 
-<!-- REVIEWS -->
 <section class="reviews sec" id="reviews">
   <div class="wrap">
     <div class="rev-top">
       <div class="reveal">
-        <span class="eyebrow">Μαρτυρίες</span>
+        <span class="eyebrow">Αξιολογήσεις</span>
         <h2>Με τα <em>δικά τους</em> λόγια.</h2>
       </div>
       <div class="rev-score reveal d1"><b>10.0</b><small>Doctoranytime · Μέση βαθμολογία</small></div>
@@ -688,19 +676,18 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
     <div class="rev-ctrls">
       <a class="rev-more" href="https://www.doctoranytime.gr/d/Psychologos/dede-eleni-2#review-section" target="_blank" rel="noopener">Διαβάστε όλες τις αξιολογήσεις στο Doctoranytime →</a>
       <div class="rev-btns">
-        <button id="revPrev" aria-label="Προηγούμενη μαρτυρία"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-        <button id="revNext" aria-label="Επόμενη μαρτυρία"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        <button id="revPrev" aria-label="Προηγούμενη αξιολόγηση"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button id="revNext" aria-label="Επόμενη αξιολόγηση"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
 <section class="faq sec" id="faq">
   <div class="wrap faq-grid">
     <div class="reveal">
       <span class="eyebrow">Συχνές Ερωτήσεις</span>
-      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);margin-top:1rem;color:var(--ink)">Ό,τι καλό<br>είναι να ξέρετε.</h2>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);margin-top:1rem;color:var(--ink)">Απαντήσεις<br>στις απορίες σας.</h2>
     </div>
     <div class="faq-list reveal d1">
       <div class="faq-item">
@@ -708,7 +695,7 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
         <div class="faq-a"><p>Ναι. Προσφέρω διαδικτυακές συνεδρίες στα ελληνικά για Έλληνες όπου κι αν ζουν στον κόσμο — με την ίδια ποιότητα παρουσίας και ασφάλειας όπως δια ζώσης. Η απόσταση δεν είναι εμπόδιο για τη θεραπευτική σχέση.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Τι είναι η Συνθετική &amp; Σχεσιακή Ψυχοθεραπεία;<span class="pm" aria-hidden="true"></span></button>
+        <button class="faq-q" aria-expanded="false">Τι είναι η Συνθετική & Σχεσιακή Ψυχοθεραπεία;<span class="pm" aria-hidden="true"></span></button>
         <div class="faq-a"><p>Συνδυάζει εργαλεία από διαφορετικές θεραπευτικές σχολές (Gestalt, σχεσιακή ψυχανάλυση, συνθετικά μοντέλα) προσαρμοσμένα σε εσάς. Στον πυρήνα της είναι η πεποίθηση ότι η ίδια η θεραπευτική σχέση είναι ο καταλύτης της αλλαγής.</p></div>
       </div>
       <div class="faq-item">
@@ -727,7 +714,6 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact sec" id="contact">
   <div class="glow g1" style="opacity:.22"></div>
   <div class="wrap contact-grid">
@@ -759,7 +745,6 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="foot">
@@ -775,7 +760,7 @@ footer{background:#1f2a23;color:rgba(246,243,236,.7);padding-block:clamp(2.5rem,
       </nav>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="yr"></span> Έλενα Δέδε — Ψυχολόγος · Αρ. Αδείας 292852/Σ.108582 · Συνθετική &amp; Σχεσιακή Ψυχοθεραπεία</span>
+      <span>© <span id="yr"></span> Έλενα Δέδε — Ψυχολόγος · Αρ. Αδείας 292852/Σ.108582 · Συνθετική & Σχεσιακή Ψυχοθεραπεία</span>
       <span>Designed by <a href="https://www.advonmedia.com" target="_blank" rel="noopener">Advon Media</a></span>
     </div>
   </div>
